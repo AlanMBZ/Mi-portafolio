@@ -1,4 +1,4 @@
-import { Download, Send } from "lucide-react";
+import { Download, Send, Code2, LucideNetwork } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="flex items-center gap-5 mb-6">
           <div className="w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-neon">
             {/* Aquí irá tu fotografía o avatar más adelante */}
-            <span className="text-3xl">👨‍💻</span>
+            <span className="text-3xl">👨</span>
           </div>
           <div>
             <p className="text-gray-400 font-mono text-sm mb-1">Hola,</p>
@@ -28,23 +28,52 @@ export default function Hero() {
           y PostgreSQL, integradas con interfaces modernas e interactivas.
         </p>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="/CV Alan Misael Bazan Zenil.pdf"
+        <div className="flex flex-wrap items-center gap-4">
+          {/* Botón Principal: CV */}
+          <a 
+            href="/CV Alan Misael Bazan Zenil.pdf" 
             download="CV_Alan_Misael_Bazan_Zenil.pdf"
             className="flex items-center gap-2 bg-neon text-dark px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-cyan-400 transition-colors"
           >
             <Download size={18} />
             Descargar CV
           </a>
-          <a
+
+          {/* Botón Secundario: WhatsApp */}
+          <a 
             href="https://wa.me/525585974292"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer" 
             className="flex items-center gap-2 bg-transparent border border-gray-600 text-white px-5 py-2.5 rounded-lg font-medium text-sm hover:border-neon hover:text-neon transition-colors"
           >
             <Send size={18} />
             Hablemos
+          </a>
+          
+          {/* Línea divisoria sutil para separar (Opcional pero se ve muy bien) */}
+
+          <div className="hidden sm:block w-px h-8 bg-neutral-700 mx-2"></div>
+
+          <a 
+            href="https://www.linkedin.com/in/TU-PERFIL-AQUI/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center p-2.5 bg-transparent border border-gray-600 text-gray-300 rounded-lg hover:border-neon hover:text-neon transition-colors"
+            title="LinkedIn"
+          >
+            <LucideNetwork size={20} />
+            LinkedIn
+          </a>
+
+          <a 
+            href="https://github.com/TU-USUARIO-AQUI" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center p-2.5 bg-transparent border border-gray-600 text-gray-300 rounded-lg hover:border-neon hover:text-neon transition-colors"
+            title="GitHub"
+          >
+            <Code2 size={20} />
+            GitHub
           </a>
         </div>
       </div>
