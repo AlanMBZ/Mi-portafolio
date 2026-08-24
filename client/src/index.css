@@ -11,3 +11,6 @@
 body {
   @apply bg-dark text-white font-sans antialiased m-0 p-0;
 }
+html {
+  scroll-behavior: smooth;
+}

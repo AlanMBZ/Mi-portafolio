@@ -2,7 +2,7 @@ import { Code2, Smartphone, Server } from 'lucide-react';
 
 export default function Skills() {
   return (
-    <section className="py-16 px-8 max-w-5xl mx-auto border-t border-neutral-800 mt-10">
+    <section id="habilidades" className="py-16 px-8 max-w-5xl mx-auto border-t border-neutral-800 mt-10">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-white mb-2">Habilidades Técnicas</h2>
         <p className="text-gray-400 text-sm">Tecnologías con las que construyo soluciones de extremo a extremo.</p>

@@ -4,6 +4,7 @@ import Projects from './components/ui/Projects';
 import Skills from './components/ui/Skills';
 import Contact from './components/ui/Contact';
 import Footer from './components/layout/Footer';
+import ScrollToTop from './components/ui/ScrollToTop';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
