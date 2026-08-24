@@ -23,10 +23,14 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <button className="flex items-center gap-2 bg-neon text-dark px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-cyan-400 transition-colors">
+          <a 
+            href="/CV Alan Misael Bazan Zenil.pdf" 
+            download="CV_Alan_Misael_Bazan_Zenil.pdf"
+            className="flex items-center gap-2 bg-neon text-dark px-5 py-2.5 rounded-lg font-bold text-sm hover:bg-cyan-400 transition-colors"
+          >
             <Download size={18} />
             Descargar CV
-          </button>
+          </a>
           <button className="flex items-center gap-2 bg-transparent border border-gray-600 text-white px-5 py-2.5 rounded-lg font-medium text-sm hover:border-neon hover:text-neon transition-colors">
             <Send size={18} />
             Hablemos
