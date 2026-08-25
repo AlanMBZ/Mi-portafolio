@@ -26,7 +26,7 @@ export default function Contact() {
 
     try {
       // Hacemos la petición al backend que acabamos de crear
-      const response = await fetch("http://localhost:3001/api/contact", {
+      const response = await fetch("https://mi-portafolio-m1fbh6x9a-alanmbzs-projects.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
