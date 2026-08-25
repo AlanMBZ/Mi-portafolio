@@ -25,8 +25,7 @@ export default function Contact() {
     setStatus("loading");
 
     try {
-      // Hacemos la petición al backend que acabamos de crear
-      const response = await fetch('https://mi-portafolio-dusky-theta.vercel.app/api/contact', {
+      const response = await fetch(import.meta.env.VITE_API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
