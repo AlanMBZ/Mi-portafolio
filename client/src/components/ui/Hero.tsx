@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="flex items-center gap-5 mb-6">
           <div className="w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-neon">
             
-            <span className="text-3xl"><img src="../public/logo.png" alt="Profile_picture" /></span>
+            <span className="text-3xl"><img src="logo.png" alt="Profile_picture" /></span>
           </div>
           <div>
             <p className="text-gray-400 font-mono text-sm mb-1">Hola,</p>
