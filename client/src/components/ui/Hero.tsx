@@ -4,13 +4,15 @@ export default function Hero() {
   return (
     <section
       id="inicio"
-      className="flex flex-col md:flex-row items-center justify-between gap-10 py-16 px-8 max-w-5xl mx-auto"
+      
+      className="flex flex-col md:flex-row items-center justify-between gap-10 py-16 px-8 max-w-6xl mx-auto"
     >
       
-      <div className="bg-card p-8 rounded-2xl border border-neutral-800 shadow-2xl w-full md:w-1/2">
-        <div className="flex items-center gap-5 mb-6">
+      
+      <div className="bg-card p-10 md:p-12 rounded-2xl border border-neutral-800 shadow-2xl w-full md:w-3/5 flex flex-col justify-center">
+        
+        <div className="flex items-center gap-5 mb-8">
           <div className="w-16 h-16 bg-neutral-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-neon">
-            
             <span className="text-3xl"><img src="logo.png" alt="Profile_picture" /></span>
           </div>
           <div>
@@ -22,15 +24,19 @@ export default function Hero() {
           </div>
         </div>
 
-        <p className="text-gray-400 mb-8 leading-relaxed text-sm">
-          Construyo aplicaciones eficientes y escalables. Especializado en
-          diseñar arquitecturas de backend sólidas con Node.js, Express, Prisma
-          y PostgreSQL, integradas con interfaces modernas e interactivas.
+        <p className="text-gray-400 mb-10 leading-relaxed text-base text-justify">
+          Desarrollador Full-Stack especializado en arquitecturas web eficientes (Node.js, React, PostgreSQL), 
+          con la agilidad técnica para adaptarme rápidamente a ecosistemas móviles o de escritorio. Mi enfoque 
+          va más allá del código: me involucro en todo el ciclo de vida del software, desde la definición de 
+          requerimientos técnicos y diseño de interfaces, hasta la evaluación de riesgos y el despliegue a producción. 
+          Me defino como un solucionador de problemas resiliente con una mentalidad de 'cómo sí hacerlo'. 
+          Disfruto potenciar el trabajo en equipo mediante una comunicación clara, asegurando que cada fase del 
+          proyecto aporte valor real al negocio.
         </p>
-{/* Contenedor Grid: 2 columnas, 2 filas. Alineación perfecta. */}
-        <div className="grid grid-cols-2 gap-3 w-full sm:max-w-md">
+
+      
+        <div className="grid grid-cols-2 gap-4 w-full sm:max-w-lg">
           
-          {/* Fila 1 - Botón Principal: CV */}
           <a 
             href="/CV Alan Misael Bazan Zenil.pdf" 
             download="CV_Alan_Misael_Bazan_Zenil.pdf"
@@ -40,7 +46,6 @@ export default function Hero() {
             Descargar CV
           </a>
 
-          {/* Fila 1 - Botón Secundario: WhatsApp */}
           <a 
             href="https://wa.me/525585974292"
             target="_blank"
@@ -51,7 +56,6 @@ export default function Hero() {
             Hablemos
           </a>
 
-          {/* Fila 2 - Botón: LinkedIn */}
           <a 
             href="https://www.linkedin.com/in/alan-misael-bazan-zenil-92a8b634b/" 
             target="_blank" 
@@ -62,7 +66,6 @@ export default function Hero() {
             LinkedIn
           </a>
 
-          {/* Fila 2 - Botón: GitHub */}
           <a 
             href="https://github.com/AlanMBZ" 
             target="_blank" 
@@ -75,10 +78,9 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Decoración visual de la plantill*/}
-      <div className="w-full md:w-1/2 flex justify-center items-center text-center">
-        <div className="text-9xl font-mono text-neutral-800/40 select-none animate-pulse">
-          &lt;Alan/&gt;
+      <div className="w-full md:w-2/5 flex justify-center items-center text-center">
+        <div className="text-7xl lg:text-9xl font-mono text-neutral-800/40 select-none animate-pulse">
+          &lt;Dev/&gt;
         </div>
       </div>
     </section>
